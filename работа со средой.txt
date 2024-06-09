@@ -1,0 +1,40 @@
+*запускаем Anaconda Prompt (Powershell не сработала команда cd)
+
+*меняем директорию командой cd + адрес нашей папки (C:\Users\Anna\Desktop\ML\flat_price)
+
+*устанавливаем питон 
+	Команда создания виртуального окружения (запустить в папке проекта, посмотреть, что получилось в результате)
+		python3 -m venv stlitenv
+
+*копируем папку stlitenv в нашу директорию
+
+*активируем stlitenv
+	On Windows, run:
+		stlitenv\Scripts\activate
+	On Unix or MacOS, run:
+		source stlitenv/bin/activate
+
+*Установка streamlit
+	pip install streamlit
+
+*Убедимся что все работает, запустим демо:
+	streamlit hello
+
+*чтобы остановить выполнение команды 
+	закрыть окно приложения,
+	используйте комбинацию клавиш Ctrl+C (english)
+	(ёщё варианты Ctrl+S, Ctrl+Pause/Break).
+
+*Первое приложение
+	В файле app.py:
+		import streamlit as st
+		st.write("Hello world")
+	
+	В терминале:
+		streamlit run app.py
+		Данная команда запустит локальный сервер Streamlit и 
+		откроет страницу вашего приложения в браузере по умолчанию. 
+		Чтобы остановить Streamlit server, нажмите Ctrl+C в терминале.
+
+*Для того, чтобы деактивировать виртуальное окружение используйте команду:
+	deactivate
